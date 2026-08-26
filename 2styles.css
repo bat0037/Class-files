@@ -1,0 +1,23 @@
+body {
+    background-color:darkblue;
+    background-image: url(https://img.magnific.com/free-vector/sporty-style-basketball-match-league-background-design_1017-44908.jpg?semt=ais_test_b&w=740&q=80);
+    Background-repeat: no-repeat;
+    object-fit:cover;
+    background-size: cover;
+    background-position: top;
+    min-height: 100vh;
+}
+
+.page-header {
+    background-image:linear-gradient(to down, blue, white);
+    border-radius:50px;
+    text-align: right;
+}
+
+.fact-card {
+    color:rgb(143, 97, 24);
+    background-color: rgba(0, 0, 255, 0.515);
+    -webkit-text-stroke-width: 100px;
+    text-align: center;
+
+}

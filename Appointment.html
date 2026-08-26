@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docter apointment</title>
+</head>
+<body>
+    
+    <h1>My Docter's Appointment</h1>
+    <p>Fill in the form below to book your appointment</p>
+    <hr>
+
+    <form>
+
+        <feildset>
+            <legend>Personal Details</legend>
+
+            <label>Your name</labal><br>
+            <input type="text" placeholder="Enter your full name"><br><br>
+
+            <label>patient ID</labal><br>
+            <input type="password" id="pid" placeholder="Your secret ID"><br><br>
+
+            <label>Date of Birth</label><br>
+            <input type="date" id="dob"><br>
+        </feildset>
+
+        <br>
+
+        <feildset>
+            <legend>Your Visit</legend>
+
+            <label>Choose your Docter</label><br>
+            <select id="docter">
+                <option value="">-- select a docter --</option>
+                <option value="dr-ray">Dr. Ray - General</option>
+                <option value="dr-lee">Dr. Lee - Teeth</option>
+                <option value="dr-sam">Dr. Sam - Eyes</option>
+            </select><br><br>
+
+            <labal>Why are you visiting</labal><br>
+            <input type="radio" name="reason" value="fever"> Fever<br>
+            <input type="radio" name="reason" value="cold"> Cold<br>
+            <input type="radio" name="reason" value="checkup"> Checkup<br>
+            <input type="radio" name="reason" value="tooth"> Thooth Pain<br><br>
+
+            <label>Any notes for the docter?</label><br>
+            <textarea id="notes" rows="3" cols="35" placeholder="e.g. I have had a sore throut for 2 days."></textarea><br>
+
+        </feildset>
+
+        <br>
+
+        <feildset>
+            <legend>Preferred Visit Day</legend>
+
+            <input type="checkbox" value="mon"> Monday<br>
+            <input type="checkbox" value="wed"> Wednesday<br>
+            <input type="checkbox" value="fri"> Friday<br>
+
+        </feildset>
+
+        <br>
+        <input type="submit" value="Book My Appointment">
+    </form>
+</body>
+</html>

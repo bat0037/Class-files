@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(circle at top, #3b3b3b, #111 70%);
+
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Main hero card */
+.hero-card {
+    width: 90%;
+    max-width: 650px;
+
+    padding: 45px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        145deg,
+        #252525,
+        #111
+    );
+
+    border: 3px solid #ffd700;
+    border-radius: 25px;
+
+    box-shadow:
+        0 0 20px #ffd700,
+        0 20px 50px rgba(0, 0, 0, 0.7);
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* Badge */
+.badge {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    background: #e63946;
+    color: white;
+
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    border-radius: 50px;
+
+    box-shadow: 0 0 15px #e63946;
+
+    transform: rotate(-3deg);
+}
+
+/* Hero name */
+.hero-name {
+    margin: 25px 0 10px;
+
+    font-family: cursive;
+    font-size: clamp(55px, 10vw, 100px);
+
+    color: #ffd700;
+
+    text-shadow:
+        4px 4px 0 #e63946,
+        0 0 20px #ffd700;
+
+    animation: pulse 2s infinite alternate;
+}
+
+/* Fixed typo: transform */
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
+
+/* Tagline */
+.tagline {
+    font-size: 20px;
+    font-weight: bold;
+
+    color: #ddd;
+
+    margin-bottom: 35px;
+}
+
+/* Section headings */
+.label {
+    display: inline-block;
+
+    margin-top: 25px;
+    margin-bottom: 15px;
+
+    padding: 8px 20px;
+
+    background: #ffd700;
+    color: #111;
+
+    border-radius: 10px;
+
+    font-size: 24px;
+
+    transform: rotate(-2deg);
+
+    box-shadow: 4px 4px 0 #e63946;
+}
+
+/* Powers */
+.power,
+.weakness {
+    padding: 12px 20px;
+
+    margin: 10px auto;
+
+    max-width: 450px;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Power styling */
+.power {
+    background: rgba(0, 180, 255, 0.15);
+    border-left: 5px solid #00b4ff;
+}
+
+/* Weakness styling */
+.weakness {
+    background: rgba(230, 57, 70, 0.15);
+    border-left: 5px solid #e63946;
+}
+
+/* Footer */
+.made-by {
+    margin-top: 35px;
+
+    font-size: 14px;
+
+    color: #999;
+
+    letter-spacing: 1px;
+}
