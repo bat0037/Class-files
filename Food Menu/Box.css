@@ -1,0 +1,35 @@
+.innerdiv {
+    background-color:gold;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    border: 5px solid darkgoldenrod;
+    margin: 10px 10px 10px 10px;
+}
+
+.outerdiv {
+    background-color: gold;
+    padding: 1px;
+    border: 10px solid darkgoldenrod;
+    margin: 10px 10px 10px 10px;
+}
+
+.outerouterdiv {
+    background-color: gold;
+    padding: 1px;
+    border: 20px solid darkgoldenrod;
+    margin: 10px 10px 10px 10px;
+}
+
+.divdiv {
+    background-color: gold;
+    padding: 1px;
+    border: 40px solid darkgoldenrod;
+    margin: 10px 10px 10px 10px;
+}
+
+.div {
+    background-color: gold;
+    padding: 1px;
+    border: 80px solid darkgoldenrod;
+    margin: 10px 10px 10px 10px;
+}
