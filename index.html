@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Position Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="top-header">
+    <h1>CSS Position Playground</h1>
+    <p>Scroll the page and move the elements to understand positioning.</p>
+  </header>
+
+  <main class="container">
+
+    <section class="demo-section">
+      <h2>1. Position: Static</h2>
+
+      <div class="stage">
+        <div class="box normal-box">Normal Box</div>
+        <div class="box static-box">Static Box</div>
+        <div class="box normal-box">Another Box</div>
+      </div>
+
+      <p class="explanation">
+        Static is the default position. The element follows the normal document flow.
+        Properties such as <code>top</code>, <code>left</code>, and <code>right</code> do not work.
+      </p>
+    </section>
+
+    <section class="demo-section">
+      <h2>2. Position: Relative</h2>
+
+      <div class="stage">
+        <div class="box normal-box">Normal Box</div>
+
+        <div class="box relative-box" id="relativeBox">
+          Relative Box
+        </div>
+
+        <div class="box normal-box">Another Box</div>
+      </div>
+
+      <div class="controls">
+        <label>
+          Move right:
+          <input type="range" id="relativeRight" min="0" max="100" value="20" />
+          <span id="relativeRightValue">20px</span>
+        </label>
+
+        <label>
+          Move down:
+          <input type="range" id="relativeTop" min="0" max="100" value="20" />
+          <span id="relativeTopValue">20px</span>
+        </label>
+      </div>
+
+      <p class="explanation">
+        Relative keeps its original space in the document, but the visual box can move
+        using <code>top</code>, <code>left</code>, <code>right</code>, or <code>bottom</code>.
+      </p>
+    </section>
+
+    <section class="demo-section">
+      <h2>3. Position: Absolute</h2>
+
+      <div class="absolute-parent">
+        <div class="parent-label">Parent: position: relative</div>
+
+        <div class="absolute-box" id="absoluteBox">
+          Absolute Box
+        </div>
+      </div>
+
+      <div class="controls">
+        <label>
+          Move from left:
+          <input type="range" id="absoluteLeft" min="0" max="300" value="30" />
+          <span id="absoluteLeftValue">30px</span>
+        </label>
+
+        <label>
+          Move from top:
+          <input type="range" id="absoluteTop" min="0" max="180" value="40" />
+          <span id="absoluteTopValue">40px</span>
+        </label>
+      </div>
+
+      <p class="explanation">
+        Absolute elements are removed from normal document flow. They are positioned
+        relative to the nearest ancestor whose position is not static.
+      </p>
+    </section>
+
+    <section class="demo-section">
+      <h2>4. Position: Sticky</h2>
+
+      <div class="sticky-demo">
+        <div class="sticky-box">
+          Sticky Box
+          <small>Scroll inside this area</small>
+        </div>
+
+        <div class="sticky-content">
+          <p>Content block 1</p>
+          <p>Content block 2</p>
+          <p>Content block 3</p>
+          <p>Content block 4</p>
+          <p>Content block 5</p>
+          <p>Content block 6</p>
+          <p>Content block 7</p>
+          <p>Content block 8</p>
+          <p>Content block 9</p>
+          <p>Content block 10</p>
+        </div>
+      </div>
+
+      <p class="explanation">
+        Sticky behaves like a normal element until a scroll threshold is reached.
+        Then it sticks to the specified position, such as <code>top: 0</code>.
+      </p>
+    </section>
+
+    <section class="demo-section">
+      <h2>5. Position: Fixed</h2>
+
+      <div class="fixed-explanation">
+        <p>
+          The yellow button in the bottom-right corner is fixed.
+          Scroll the entire page to see that it stays in the same viewport position.
+        </p>
+      </div>
+    </section>
+
+    <section class="demo-section long-section">
+      <h2>Extra Scroll Area</h2>
+      <p>Keep scrolling to observe the fixed and sticky elements.</p>
+      <p>Fixed elements stay attached to the browser viewport.</p>
+      <p>Sticky elements stay within their scrolling container.</p>
+    </section>
+
+  </main>
+
+  <button class="fixed-box" id="fixedBox">
+    Fixed Box
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
