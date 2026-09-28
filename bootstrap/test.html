@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 4.3.1 Text Styles Test</title>
+    <!-- Bootstrap CSS v4.3.1 CDN -->
+    <link rel="stylesheet" href="https://bootstrapcdn.com">
+    <style>
+        /* Small styling just to help visualize boundaries */
+        .box { background: #f8f9fa; border: 1px dashed #dee2e6; padding: 10px; margin-bottom: 15px; }
+        .narrow-box { max-width: 200px; }
+    </style>
+</head>
+<body class="p-4">
+
+    <div class="container">
+        <h1 class="mb-4 text-center text-primary font-weight-bold">Bootstrap 4.3.1 Text Styles Test Playground</h1>
+        <hr class="mb-5">
+
+        <!-- Section 1: Font Weight & Italics -->
+        <h3 class="text-secondary mb-3">1. Font Weight & Italics</h3>
+        <div class="box">
+            <p class="font-weight-bold">font-weight-bold: Bold text weight</p>
+            <p class="font-weight-normal">font-weight-normal: Normal standard text weight</p>
+            <p class="font-weight-light">font-weight-light: Light text weight</p>
+            <p class="font-italic">font-italic: Italic text styling</p>
+        </div>
+
+        <!-- Section 2: Text Alignment -->
+        <h3 class="text-secondary mb-3">2. Text Alignment</h3>
+        <div class="box">
+            <p class="text-left bg-light mb-1">text-left: Aligned left</p>
+            <p class="text-center bg-light mb-1">text-center: Aligned center</p>
+            <p class="text-right bg-light mb-1">text-right: Aligned right</p>
+        </div>
+
+        <!-- Section 3: Text Transformation -->
+        <h3 class="text-secondary mb-3">3. Text Transformation</h3>
+        <div class="box">
+            <p class="text-lowercase">TEXT-LOWERCASE: FORCES EVERYTHING LOWER</p>
+            <p class="text-uppercase">text-uppercase: forces everything upper</p>
+            <p class="text-capitalize">text-capitalize: capitalises the first letter of each word</p>
+        </div>
+
+        <!-- Section 4: Wrapping, Overflow & Monospace -->
+        <h3 class="text-secondary mb-3">4. Wrapping, Overflow & Code Look</h3>
+        <div class="box">
+            <p class="text-monospace mb-3">text-monospace: Monospace font stack perfect for code layouts.</p>
+            
+            <p class="mb-1"><strong>text-truncate example (shrinks text with trailing dots):</strong></p>
+            <div class="text-truncate box narrow-box">
+                This is a very long text string that will be cut off by the container boundary width constraint.
+            </div>
+
+            <p class="mb-1"><strong>text-break example (breaks long words/links):</strong></p>
+            <div class="text-break box narrow-box">
+                SupercalifragilisticexpialidociousLongLinkOrWordThatWontBreakNormally
+            </div>
+        </div>
+
+        <!-- Section 5: Contextual Colors & Decorations -->
+        <h3 class="text-secondary mb-3">5. Contextual Colors & Decorations</h3>
+        <div class="box">
+            <p><a href="#" class="text-decoration-none">text-decoration-none: Clickable link with no underline</a></p>
+            <p class="text-primary">text-primary color accent</p>
+            <p class="text-secondary">text-secondary color accent</p>
+            <p class="text-success">text-success color accent</p>
+            <p class="text-danger">text-danger color accent</p>
+            <p class="text-warning">text-warning color accent</p>
+            <p class="text-info">text-info color accent</p>
+            <p class="text-muted">text-muted: Faded down grey variant text representation</p>
+            <p class="text-white bg-dark p-2 rounded">text-white: White text styling on dark canvas</p>
+        </div>
+    </div>
+
+</body>
+</html>
